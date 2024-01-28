@@ -503,10 +503,15 @@ svg {
 
 .filter-button-list {
    display: flex;
-   padding: 96px 0 72px 0;
    align-items: center;
-   justify-content: center;
-   gap: 24px;
+   flex-wrap: wrap;
+   gap: 16px;
+   margin: 48px auto 0 16px;
+   padding: 0;
+}
+
+.nav-buttons {
+   padding: 0;
 }
 
 .filter-button {
@@ -526,6 +531,10 @@ svg {
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.filter-button:nth-child(-n + 3) {
+   margin-right: 8px;
+ }
+
 .filter-button:hover,
 .filter-button:focus {
    color: var(--WHITE, #fff);
@@ -537,25 +546,34 @@ svg {
 }
 
 .main-section {
-   padding-top: 0px;
-   padding-bottom: 120px;
-   padding-left: 0;
-   padding-right: 0;
+   padding: 0;
+   display: flex;
+   width: 428px;
+
+}
+.project-list {
+   padding: 0;
+}
+
+.project-card {
+   max-width: 100%;
+
 }
 
 .project-container {
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
    justify-content: center;
-   column-gap: 24px;
+   gap: 48px;
    row-gap: 48px;
-   padding: 0;
+   padding: 48px 16px;
+   margin: 0;
    justify-content: center;
+
 }
 
-.project-card {
-   flex-basis: calc((100% - 48px) / 3);
-}
+
 
 .project-link {
    display: block;
@@ -573,6 +591,12 @@ svg {
 .card-div {
    position: relative;
    overflow: hidden;
+}
+
+.project-image{
+   object-fit: contain;
+   width: 396px;
+
 }
 
 .card-paragraph {
@@ -1516,6 +1540,28 @@ url(../images/background-image@2x.jpg);
       
    }
 
- 
+   .filter-button-list {
+      display: flex;
+      padding: 96px 0 72px 0;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+   }
+
+   .project-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 24px;
+      row-gap: 48px;
+      padding: 0;
+      justify-content: center;
+   }
+
+   .project-card {
+      flex-basis: calc((100% - 48px) / 3);
+      
+   }
    
 }

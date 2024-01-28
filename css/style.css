@@ -548,7 +548,7 @@ svg {
 .main-section {
    padding: 0;
    display: flex;
-   width: 428px;
+   max-width: 428px;
 
 }
 .project-list {

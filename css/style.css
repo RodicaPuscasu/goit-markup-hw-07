@@ -358,13 +358,9 @@ margin: 0;
 .section-one-container {
    display: flex;
    flex-direction: column;
-   /* flex-wrap: wrap;
-   padding: 94px 16px;
-   width: 100%;
+   margin: 0;
    gap: 72px;
-   justify-content: center;
-   align-items: center;
-   margin: 0; */
+   
 }
 
 .section-one-icon {
@@ -373,11 +369,8 @@ margin: 0;
 
 .section-one-item {
    width: 100%;
-   /* display: flex;
-   width: 396px;
-   flex-direction: column;
-   align-items: center;
-   gap: 8px; */
+   gap: 8px;
+   
 }
 
 .section-one-studio {
@@ -397,7 +390,7 @@ margin: 0;
    font-weight: 500;
    line-height: 111.111%;
    letter-spacing: 0.72px;
-   margin-bottom: 8px;
+   margin: 0 0 8px 0;
    text-align: center;
 }
 
@@ -407,6 +400,10 @@ margin: 0;
    line-height: 150%;
    letter-spacing: 0.32px;
    margin: 0;
+}
+
+.second-section{
+   padding: 0;
 }
 
 .section-two-container {
@@ -1492,6 +1489,10 @@ letter-spacing: 0.48px;
    gap: 24px;
 }
 
+.section-one-item:nth-child(-n + 2) {
+   margin-bottom: 56px
+ }
+
 .section-one-item {
    width: calc((100% - 24px) / 2);   
 }
@@ -1742,12 +1743,12 @@ letter-spacing: 0.48px;
 .section-one-container {
    display: flex;
    flex-direction: row;
-   padding: 94px 156px;
    width: 1128px;
    gap: 24px;
    justify-content: center;
    align-items: center;
    flex-wrap: nowrap;
+   
 }
 
 .section-one-icon {
@@ -1767,7 +1768,8 @@ letter-spacing: 0.48px;
    width: 100%;
    min-width: 264px;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
+   justify-content: center;
    gap: 8px;
 }
 

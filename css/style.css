@@ -1680,6 +1680,38 @@ flex-direction: row;
    width: 398px;
 }
 
+.filter-button-list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 16px;
+   margin: 48px auto 0 16px;
+   padding: 0;
+}
+
+.project-container {
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   row-gap: 72px;
+   padding: 64px 16px;
+   margin: 0;
+   min-width: 768px;
+   position: relative;
+}
+
+.project-card {
+   width: 356px;
+   flex-basis: calc((100% - 24px) / 2);
+}
+
+.project-container: :last-child{
+}
+
 
 
 }
@@ -2885,6 +2917,20 @@ max-width: 398px;
    display: flex;
    width: 100%;
    width: 398px;
+}
+
+.project-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 48px;
+   row-gap: 48px;
+   padding: 48px 16px;
+   margin: 0;
+   justify-content: center;
+   min-width: 428px;
+   position: relative;
 }
 
 }

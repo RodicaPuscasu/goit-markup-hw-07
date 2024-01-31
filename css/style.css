@@ -552,7 +552,8 @@ margin: 0;
 
 .section-four-container {
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
+   flex-direction: column;
    gap: 16px;
    justify-content: center;
    align-items: center;
@@ -563,9 +564,9 @@ margin: 0;
 }
 
 .section-four-item {
+   display:flex;
    width: 190px;
    height: 88px;
-   width: calc((100% - 48px) / 2);
    gap: 72px;
 
 }
@@ -2049,6 +2050,12 @@ letter-spacing: 0.48px;
    color: var(--logo-color);
 }
 
+.section-three-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
 .fourth-section {
    background-color: var(--white);
    padding: 96px 0;
@@ -2071,18 +2078,25 @@ letter-spacing: 0.48px;
    padding-left: 0px;
    margin-top: 0px;
    margin-bottom: 0px;
+   position: relative;
    
 }
 
 .section-four-item {
    width: 168px;
    height: 88px;
+   width: calc((100% - 48px) / 2);
+
+}
+
+
+
 }
 
 
 
 
-}
+
 
 
 

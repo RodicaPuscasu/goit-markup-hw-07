@@ -778,7 +778,6 @@ margin: 0 auto;
    align-items: center;
    flex-direction: column;
    flex-wrap: wrap;
-   gap: 72px;
 }
 
 .first-footer-element {
@@ -1170,9 +1169,9 @@ letter-spacing: 0.48px;
    display: flex;
    gap: 24px;
    width: 428px;
-   flex-direction: column;
-   padding-left: 15px;
-   padding-right: 15px;
+   flex-direction: row;
+   padding-left: 0;
+   padding-right: 0;
 
    
 
@@ -2497,7 +2496,7 @@ letter-spacing: 0.48px;
    display: flex;
    flex-direction: row;
    padding: 100px 0;
-   justify-content: center;
+   justify-content: space-between;
    flex-direction: row;
 }
 
@@ -2513,6 +2512,7 @@ letter-spacing: 0.48px;
 .footer-div {
    display: flex;
    align-items: baseline;
+   padding: 0;
 }
 
 .first-footer-element {
@@ -2527,7 +2527,8 @@ letter-spacing: 0.48px;
    padding-right: 0px;
    padding-left: 0px;
    max-width: 208px;
-}
+   display: flex;
+align-items: flex-start;}
 
 .footer-logo {
    font-family: "Raleway", sans-serif;
@@ -2562,6 +2563,7 @@ letter-spacing: 0.48px;
    flex-direction: column;
    align-items: flex-start;
    padding-inline-end: 0%;
+   margin-right: 80px;
 }
 
 .footer-social-media-title {
@@ -2573,6 +2575,7 @@ letter-spacing: 0.48px;
    letter-spacing: 0.32px;
    margin-bottom: 16px;
    margin-top: 0;
+   justify-content: flex-start;
 }
 
 .footer-social-media-list {
@@ -2610,6 +2613,43 @@ letter-spacing: 0.48px;
 .footer-svg {
    fill: var(--cloud);
    
+}
+
+.footer-subscribe-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.label {
+   width: 264px;
+}
+
+.subscribe-title{
+   color: var(--white);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.32px;
+   margin-bottom: 16px;
+   margin-top: 0;
+   padding: 0;
+   padding-inline-start: 0;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+
+.subscribe-form {
+   display: flex;
+   gap: 24px;
+   width: 428px;
+   flex-direction: row;
+   padding: 0;
+
+   
+
 }
 
 }

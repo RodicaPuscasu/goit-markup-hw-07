@@ -463,7 +463,6 @@ margin: 0 auto;
    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .team-member-description {
@@ -1618,7 +1617,7 @@ letter-spacing: 0.48px;
 .section-four-item {
    width: 168px;
    height: 88px;
-   
+   width: calc((100% - 48px) / 3);
    
 }
 .section-four-item:nth-child(n + 3) {
@@ -2984,7 +2983,7 @@ align-items: flex-start;}
 }
 
 .section-four-item {
-   width: 168px;
+   width: 190px;
    height: 88px;
    width: calc((100% - 48px) / 2);
    

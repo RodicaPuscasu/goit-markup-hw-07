@@ -68,7 +68,7 @@ button {
 
 
 .container {
-   max-width: 1158px;
+   width: 100%;
    margin: 0 auto;
    padding: 0 15px;
 }
@@ -298,7 +298,7 @@ button {
    background-size: cover;
    text-align: center;
    padding: 112px 39px;
-   max-width: 1440px;
+   width: 100%;
    background-repeat: no-repeat;
    background-position: center;
 
@@ -1430,7 +1430,7 @@ letter-spacing: 0.48px;
    background-size: cover;
    text-align: center;
    gap: 36px;
-   max-width: 1440px;
+   width: 100%;
    background-repeat: no-repeat;
    background-position: center;
    display: flex;
@@ -1526,6 +1526,7 @@ letter-spacing: 0.48px;
    gap: 24px;
    padding-inline-start: 0px;
    padding-left: 0px;
+   justify-content: center;
 }
 
 .section-three-title {
@@ -1617,6 +1618,7 @@ letter-spacing: 0.48px;
 .section-four-item {
    width: 168px;
    height: 88px;
+   
    
 }
 .section-four-item:nth-child(n + 3) {
@@ -1984,6 +1986,7 @@ flex-direction: row;
 
 .first-section {
    padding: 0;
+   min-width: 1440px;
 }
 
 .section-one-container {
@@ -1991,11 +1994,11 @@ flex-direction: row;
    flex-direction: row;
    width: 100%;
    gap: 24px;
-   justify-content: flex-start;
+   justify-content: center;
    align-items: center;
    flex-wrap: nowrap;
    position: relative;
-   padding: 120px 156px;
+   padding: 120px 0;
    min-width: 1440px;
    
 }
@@ -2055,10 +2058,15 @@ flex-direction: row;
    margin-top: 0px;
 }
 
+.second-section{
+   padding: 0;
+   min-width: 1440px;
+}
+
 .section-two-container {
    display: flex;
    flex-direction: row;
-   width: 1440px;
+   width: 100%;
    gap: 24px;
    justify-content: center;
    align-items: center;
@@ -2088,6 +2096,7 @@ flex-direction: row;
    margin-bottom: 72px;
    display: flex;
    justify-content: center;
+   width: 100%;
 
    
 }
@@ -2106,6 +2115,7 @@ flex-direction: row;
    padding-left: 0px;
    align-items: flex-start;
    flex-wrap: nowrap;
+   justify-content: center;
 }
 
 .section-three-item {
@@ -2119,7 +2129,6 @@ flex-direction: row;
    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   flex-basis: calc((100% - 72px) / 4);
    width: 264px;
    padding: 0;
 }
@@ -2472,12 +2481,15 @@ flex-direction: row;
 
 .first-section {
    padding: 0;
+   display: flex;
+   justify-content: center;
+   min-width: 1440px;
 }
 
 .section-one-container {
    display: flex;
    flex-direction: row;
-   min-width: 1440px;
+   width: 100%;
    gap: 24px;
    justify-content: center;
    align-items: center;
